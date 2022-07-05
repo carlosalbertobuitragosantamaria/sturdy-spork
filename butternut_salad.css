@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-weight: 200;
+}
+
+img {
+	max-width: 100%;
+	margin: 1rem 0;
+}
+
+.title,
+.intro__text,
+.message__recipe,
+.section__ingredients,
+.section__method {
+	padding: 0 .4rem 0 .4rem;
+}
+
+.header {
+	padding: .2rem;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);/*h-offset, v-offset, blur, spread*/
+	margin-bottom: 3rem;
+	background-color: #fff;
+}
+
+.logo__img {
+	width: 20%;
+}
+
+.title {
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+.method__list,
+.ingredients__list {
+	padding-left: 1rem;
+}
+.ingredients__items,
+.method__items {
+	margin-bottom: .5rem;
+}
+
+/*_______________________ SCREEN > 800px_________________________ */
+
+@media screen and (min-width: 800px) {
+
+	.header {
+		padding: 1rem .1rem;
+	}
+
+	main {
+		max-width: 70rem;
+		margin: 0 auto; /* places the content in the middle horizontally */
+		padding: 0 4rem 4rem 4rem;
+		border-left: 4px solid #83c5be66;
+		border-right: 4px solid #83c5be66;
+		font-size: 1.2rem;
+		font-weight: 120;
+	}
+
+	.logo__img {
+		width: 8%;
+	}
+
+	.title {
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.section__intro {
+		display: table;/*this creates divides the siblings but doesn't place them horizontaly*/
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.intro__text,
+	.photo__wrapper {
+		display: table-cell;/*this places the 2 elements next to each other horizontally*/
+		width: 50%;
+		vertical-align: middle;/*'center' doesn't work*/
+		font-size: 1.8rem;
+	}
+
+	.section__ingredients {
+		float: right;
+		padding: 1rem;
+		margin: -1rem 0 0 1rem;
+		border-radius: 5px;
+		background-color: #83c5be88;
+	}
+
+	.ingredients__subheader {
+		margin: 0;
+	}
+
+
+}
